@@ -1,0 +1,8 @@
+from dao.district_dao import DistrictDao
+from dao.sellinfo_dao import SellInfoDao
+from dao.task_statistic_dao import TaskStatisticDao
+from config import DBCONFIG
+
+DISTRICT_DAO = DistrictDao(DBCONFIG.HOSTNAME, DBCONFIG.USERNAME, DBCONFIG.PASSWD, DBCONFIG.DBNAME)
+SELL_INFO_DAO = SellInfoDao(DBCONFIG.HOSTNAME, DBCONFIG.USERNAME, DBCONFIG.PASSWD, DBCONFIG.DBNAME)
+TASK_STATISTIC_DAO = TaskStatisticDao(DBCONFIG.HOSTNAME, DBCONFIG.USERNAME, DBCONFIG.PASSWD, DBCONFIG.DBNAME)
